@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Root landing page with hero and links to site sections -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dan's Space</title>
+  <!-- Tailwind via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script type="module" src="/js/dark-mode.js"></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+  <header class="text-center py-12">
+    <h1 class="text-4xl font-bold mb-4">Welcome to Dan's Space</h1>
+    <p class="max-w-prose mx-auto">A hub for psychiatry, strength training, theology, coding, and poetry.</p>
+    <button id="themeToggle" class="mt-4 px-4 py-2 border rounded">Toggle Dark Mode</button>
+  </header>
+  <main class="max-w-4xl mx-auto grid gap-6 sm:grid-cols-2 p-4">
+    <a href="/blog/" class="block rounded-2xl p-6 shadow-md bg-white dark:bg-gray-800 hover:shadow-lg">
+      <h2 class="text-2xl font-semibold mb-2">Blog</h2>
+      <p>Evidence-based articles.</p>
+    </a>
+    <a href="/portfolio/" class="block rounded-2xl p-6 shadow-md bg-white dark:bg-gray-800 hover:shadow-lg">
+      <h2 class="text-2xl font-semibold mb-2">Portfolio</h2>
+      <p>Case reports, slides, code, and poems.</p>
+    </a>
+    <a href="/garden/" class="block rounded-2xl p-6 shadow-md bg-white dark:bg-gray-800 hover:shadow-lg">
+      <h2 class="text-2xl font-semibold mb-2">Thought Garden</h2>
+      <p>Loose notes, Bible-reading CSVs, and workout logs.</p>
+    </a>
+    <a href="/hub/" class="block rounded-2xl p-6 shadow-md bg-white dark:bg-gray-800 hover:shadow-lg">
+      <h2 class="text-2xl font-semibold mb-2">Hub</h2>
+      <p>Outbound links and social profiles.</p>
+    </a>
+  </main>
+</body>
+</html>
