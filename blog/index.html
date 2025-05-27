@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<!-- Intro page for Thought Garden with placeholder notes -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dan's collection of short notes and study logs." />
-  <meta property="og:title" content="Thought Garden" />
-  <meta property="og:description" content="Brief notes, daily logs, and study snippets." />
+  <meta name="description" content="Dan's articles on psychiatry, sleep, and more." />
+  <meta property="og:title" content="Blog - Dan's Space" />
+  <meta property="og:description" content="Read Dan's latest articles on mental health and technology." />
   <meta property="og:type" content="website" />
-  <title>Thought Garden</title>
+  <title>Blog</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script type="module" src="/js/dark-mode.js"></script>
 </head>
@@ -17,9 +16,11 @@
     <a href="/" class="underline">Home</a>
     <button id="themeToggle" aria-label="Toggle dark mode" class="border rounded px-2 py-1">Toggle Dark Mode</button>
   </nav>
-  <section class="prose dark:prose-dark mx-auto p-4">
-    <h1>Welcome to the Thought Garden</h1>
-    <p>Here you'll find brief musings, daily logs, and study notes as they evolve.</p>
-  </section>
+  <main class="max-w-prose mx-auto p-4 space-y-4">
+    <h1 class="text-3xl font-semibold">Blog</h1>
+    <ul class="list-disc pl-5">
+      <li><a href="/blog/2025-05-psychiatry-sleep.html" class="text-blue-600 underline">Psychiatry and Sleep</a></li>
+    </ul>
+  </main>
 </body>
 </html>
