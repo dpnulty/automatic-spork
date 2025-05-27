@@ -1,32 +1,53 @@
 :root {
-  --primary-color: #2563eb; /* blue-600 */
-  --secondary-color: #d97706; /* amber-600 */
-  --font-family-base: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --slate: #f1f5f9;
+  --slate-text: #1e293b;
+  --sea-foam: #0d9488;
+  --hazel: #92400e;
+  --font-stack: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --spacing-base: 1rem;
 }
 
 .dark {
-  --primary-color: #60a5fa; /* blue-300 */
-  --secondary-color: #fbbf24; /* amber-400 */
+  --slate: #0f172a;
+  --slate-text: #f1f5f9;
+  --sea-foam: #5eead4;
+  --hazel: #d8b4fe;
 }
 
 body {
-  font-family: var(--font-family-base);
+  font-family: var(--font-stack);
+}
+
+.bg-slate {
+  background-color: var(--slate);
+}
+
+.text-slate {
+  color: var(--slate-text);
 }
 
 .heading {
-  color: var(--primary-color);
+  color: var(--hazel);
+}
+
+.link {
+  color: var(--sea-foam);
+  text-decoration: underline;
+}
+
+.link:hover {
+  text-decoration: none;
 }
 
 .btn {
-  background-color: var(--primary-color);
+  background-color: var(--sea-foam);
   color: #fff;
   padding: calc(var(--spacing-base) / 2) var(--spacing-base);
   border-radius: 0.375rem;
 }
 
 .btn:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--hazel);
   color: #000;
 }
 
