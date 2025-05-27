@@ -14,3 +14,6 @@ All pages are plain HTML with Tailwind CSS from a CDN.
 
 ## Deploying
 Simply push to the `main` branch (or enable GitHub Pages in settings).
+
+## Building with Partials
+Run `node build.js` to inject the header and footer into each HTML page. The script looks for `<!-- @@header -->` and `<!-- @@footer -->` placeholders and replaces them with the content of the files in `partials/`.
