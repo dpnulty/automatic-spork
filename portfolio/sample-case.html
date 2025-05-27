@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <!-- Example portfolio page with placeholder content -->
 <html lang="en">
@@ -13,13 +15,11 @@
   <script type="module" src="/js/dark-mode.js"></script>
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-  <nav aria-label="Main" class="p-4 flex justify-between">
-    <a href="/" class="underline">Home</a>
-    <button id="themeToggle" aria-label="Toggle dark mode" class="border rounded px-2 py-1">Toggle Dark Mode</button>
-  </nav>
+  {% include header.html %}
   <main class="prose dark:prose-dark mx-auto p-4">
     <h1>Sample Case Report</h1>
     <p>An overview of a patient scenario illustrating assessment, treatment plan, and outcome.</p>
   </main>
+  {% include footer.html %}
 </body>
 </html>
