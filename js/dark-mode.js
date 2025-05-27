@@ -3,7 +3,8 @@ const btn = document.getElementById('themeToggle');
 const root = document.documentElement;
 const stored = localStorage.getItem('theme');
 
-if (stored === 'dark') {
+// Default to dark when no preference is stored
+if (stored === 'dark' || stored === null) {
   root.classList.add('dark');
 }
 
