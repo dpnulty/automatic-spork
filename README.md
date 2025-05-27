@@ -10,7 +10,8 @@ All pages are plain HTML with Tailwind CSS from a CDN.
 
 ## Development Tips
  - `dark-mode.js` toggles the theme and now stores your preference in `localStorage`.
- - `search.js` is a minimal ES6 module for fetching `search.json`.
+- `search.js` is a minimal ES6 module for fetching `search.json`.
+- Run `node build.js` to inject the shared header and footer into all pages before deploying.
 
 ## Deploying
 Simply push to the `main` branch (or enable GitHub Pages in settings).
